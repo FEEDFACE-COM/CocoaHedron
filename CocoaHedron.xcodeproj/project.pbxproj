@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B1D32D705DE71A10026C6C6 /* FFsine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1D32D505DE71A10026C6C6 /* FFsine.h */; };
+		4B1D32D805DE71A10026C6C6 /* FFsine.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D32D605DE71A10026C6C6 /* FFsine.c */; };
+		4B1D32D905DE71A10026C6C6 /* FFsine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1D32D505DE71A10026C6C6 /* FFsine.h */; };
+		4B1D32DA05DE71A10026C6C6 /* FFsine.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D32D605DE71A10026C6C6 /* FFsine.c */; };
+		4B1D32E405DE76100026C6C6 /* FFSineController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1D32E205DE76100026C6C6 /* FFSineController.h */; };
+		4B1D32E505DE76100026C6C6 /* FFSineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D32E305DE76100026C6C6 /* FFSineController.m */; };
+		4B2692AC05E157BA001CFF8F /* CocoaHedron.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4B2692AB05E157BA001CFF8F /* CocoaHedron.icns */; };
+		4B2692AD05E157BA001CFF8F /* CocoaHedron.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4B2692AB05E157BA001CFF8F /* CocoaHedron.icns */; };
+		4B479C0305DAD1E600922F7A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		4B479C0C05DAD1FF00922F7A /* CocoaHedron_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA80370C50100C91783 /* CocoaHedron_Prefix.pch */; };
+		4B479C0E05DAD21100922F7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B479C0D05DAD21100922F7A /* main.m */; };
+		4B5A74EC05DADD5C0096D5A3 /* FFCam.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C43F05DAD65300459B7C /* FFCam.c */; };
+		4B5A74F105DAE3BD0096D5A3 /* FFdraw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C44105DAD65300459B7C /* FFdraw.c */; };
+		4B5A74F205DAE3BD0096D5A3 /* FFTetra.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C44305DAD65300459B7C /* FFTetra.c */; };
+		4B5A74F305DAE3BD0096D5A3 /* FFVektor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C44505DAD65300459B7C /* FFVektor.c */; };
+		4B5A74F405DAE3EF0096D5A3 /* FFCam.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C44005DAD65300459B7C /* FFCam.h */; };
+		4B5A74F505DAE3EF0096D5A3 /* FFdraw.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C44205DAD65300459B7C /* FFdraw.h */; };
+		4B5A74F605DAE3EF0096D5A3 /* FFTetra.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C44405DAD65300459B7C /* FFTetra.h */; };
+		4B5A74F705DAE3EF0096D5A3 /* FFVektor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C44605DAD65300459B7C /* FFVektor.h */; };
+		4B5A74F805DAE5760096D5A3 /* FFWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C48405DAD6F800459B7C /* FFWindow.h */; };
+		4B5A74F905DAE5760096D5A3 /* FFController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C47E05DAD6DA00459B7C /* FFController.h */; };
+		4B5A74FA05DAE5820096D5A3 /* FFWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C48505DAD6F800459B7C /* FFWindow.m */; };
+		4B5A74FB05DAE5820096D5A3 /* FFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C47F05DAD6DA00459B7C /* FFController.m */; };
+		4B5A750005DAEAF50096D5A3 /* ConfigureSheet.nib in Resources */ = {isa = PBXBuildFile; fileRef = 4B5A74FF05DAEAF50096D5A3 /* ConfigureSheet.nib */; };
+		4B5A750405DAF42E0096D5A3 /* FFCocoaHedronView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A750305DAF42E0096D5A3 /* FFCocoaHedronView.m */; };
+		4B5A750505DAF42E0096D5A3 /* FFCocoaHedronView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5A750305DAF42E0096D5A3 /* FFCocoaHedronView.m */; };
+		4B5A750705DAF43C0096D5A3 /* FFCocoaHedronView_APP.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B5A750605DAF43C0096D5A3 /* FFCocoaHedronView_APP.h */; };
+		4B7BB48905DFE57D00611E84 /* fs.tif in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BB48805DFE57C00611E84 /* fs.tif */; };
+		4B7BB48A05DFE57D00611E84 /* fs.tif in Resources */ = {isa = PBXBuildFile; fileRef = 4B7BB48805DFE57C00611E84 /* fs.tif */; };
+		4B7E4B1A05DE926D00FAC147 /* FFSineController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B1D32E205DE76100026C6C6 /* FFSineController.h */; };
+		4B7E4B1B05DE928D00FAC147 /* FFSineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1D32E305DE76100026C6C6 /* FFSineController.m */; };
+		4B85C42C05DAD43300459B7C /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 4B85C42B05DAD43300459B7C /* MainMenu.nib */; };
+		4B85C42F05DAD44200459B7C /* ff.tif in Resources */ = {isa = PBXBuildFile; fileRef = 4B85C42E05DAD44200459B7C /* ff.tif */; };
+		4B85C43005DAD44200459B7C /* ff.tif in Resources */ = {isa = PBXBuildFile; fileRef = 4B85C42E05DAD44200459B7C /* ff.tif */; };
+		4B85C44F05DAD65300459B7C /* FFCam.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C43F05DAD65300459B7C /* FFCam.c */; };
+		4B85C45005DAD65300459B7C /* FFCam.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C44005DAD65300459B7C /* FFCam.h */; };
+		4B85C45105DAD65300459B7C /* FFdraw.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C44105DAD65300459B7C /* FFdraw.c */; };
+		4B85C45205DAD65300459B7C /* FFdraw.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C44205DAD65300459B7C /* FFdraw.h */; };
+		4B85C45305DAD65300459B7C /* FFTetra.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C44305DAD65300459B7C /* FFTetra.c */; };
+		4B85C45405DAD65300459B7C /* FFTetra.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C44405DAD65300459B7C /* FFTetra.h */; };
+		4B85C45505DAD65300459B7C /* FFVektor.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C44505DAD65300459B7C /* FFVektor.c */; };
+		4B85C45605DAD65300459B7C /* FFVektor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C44605DAD65300459B7C /* FFVektor.h */; };
+		4B85C46405DAD68300459B7C /* FFSineButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C45805DAD68300459B7C /* FFSineButton.h */; };
+		4B85C46505DAD68300459B7C /* FFSineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C45905DAD68300459B7C /* FFSineButton.m */; };
+		4B85C46805DAD68300459B7C /* FFSineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C45C05DAD68300459B7C /* FFSineView.h */; };
+		4B85C46905DAD68300459B7C /* FFSineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C45D05DAD68300459B7C /* FFSineView.m */; };
+		4B85C46B05DAD6A700459B7C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B85C46A05DAD6A700459B7C /* OpenGL.framework */; };
+		4B85C46C05DAD6A700459B7C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B85C46A05DAD6A700459B7C /* OpenGL.framework */; };
+		4B85C48205DAD6DA00459B7C /* FFController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C47E05DAD6DA00459B7C /* FFController.h */; };
+		4B85C48305DAD6DA00459B7C /* FFController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C47F05DAD6DA00459B7C /* FFController.m */; };
+		4B85C48E05DAD86400459B7C /* FFSineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C45905DAD68300459B7C /* FFSineButton.m */; };
+		4B85C49005DAD86400459B7C /* FFSineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85C45D05DAD68300459B7C /* FFSineView.m */; };
+		4B85C49105DAD86B00459B7C /* FFSineButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C45805DAD68300459B7C /* FFSineButton.h */; };
+		4B85C49305DAD86B00459B7C /* FFSineView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B85C45C05DAD68300459B7C /* FFSineView.h */; };
+		4BA239F405DD5CD7006A53FB /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */; };
+		4BF098DD05DAF592008E4BAC /* FFCocoaHedronView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF098DC05DAF592008E4BAC /* FFCocoaHedronView.h */; };
+		4BF098DE05DAF592008E4BAC /* FFCocoaHedronView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF098DC05DAF592008E4BAC /* FFCocoaHedronView.h */; };
+		4BF098E005DAF5A4008E4BAC /* FFCocoaHedronView_SAVER.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BF098DF05DAF5A4008E4BAC /* FFCocoaHedronView_SAVER.h */; };
+		8D255AC70486D3F9007BF209 /* CocoaHedron_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA80370C50100C91783 /* CocoaHedron_Prefix.pch */; };
+		8D255ACA0486D3F9007BF209 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D255ACE0486D3F9007BF209 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		8D255ACF0486D3F9007BF209 /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = /System/Library/Frameworks/ScreenSaver.framework; sourceTree = "<absolute>"; };
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCFA80370C50100C91783 /* CocoaHedron_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaHedron_Prefix.pch; sourceTree = "<group>"; };
+		4B1D32D505DE71A10026C6C6 /* FFsine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFsine.h; sourceTree = "<group>"; };
+		4B1D32D605DE71A10026C6C6 /* FFsine.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = FFsine.c; sourceTree = "<group>"; };
+		4B1D32E205DE76100026C6C6 /* FFSineController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFSineController.h; sourceTree = "<group>"; };
+		4B1D32E305DE76100026C6C6 /* FFSineController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FFSineController.m; sourceTree = "<group>"; };
+		4B2692AB05E157BA001CFF8F /* CocoaHedron.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CocoaHedron.icns; sourceTree = "<group>"; };
+		4B479C0005DAD19000922F7A /* CocoaHedron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaHedron.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B479C0205DAD19000922F7A /* CocoaHedron-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "CocoaHedron-Info.plist"; path = "/Volumes/DATA/folkert/Documents/src/osx/CocoaHedron/CocoaHedron-Info.plist"; sourceTree = "<absolute>"; };
+		4B479C0D05DAD21100922F7A /* main.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B5A74FF05DAEAF50096D5A3 /* ConfigureSheet.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = ConfigureSheet.nib; sourceTree = "<group>"; };
+		4B5A750305DAF42E0096D5A3 /* FFCocoaHedronView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FFCocoaHedronView.m; sourceTree = "<group>"; };
+		4B5A750605DAF43C0096D5A3 /* FFCocoaHedronView_APP.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFCocoaHedronView_APP.h; sourceTree = "<group>"; };
+		4B7BB48805DFE57C00611E84 /* fs.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = fs.tif; sourceTree = "<group>"; };
+		4B85C42B05DAD43300459B7C /* MainMenu.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; path = MainMenu.nib; sourceTree = "<group>"; };
+		4B85C42E05DAD44200459B7C /* ff.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ff.tif; sourceTree = "<group>"; };
+		4B85C43F05DAD65300459B7C /* FFCam.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = FFCam.c; sourceTree = "<group>"; };
+		4B85C44005DAD65300459B7C /* FFCam.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; path = FFCam.h; sourceTree = "<group>"; };
+		4B85C44105DAD65300459B7C /* FFdraw.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = FFdraw.c; sourceTree = "<group>"; };
+		4B85C44205DAD65300459B7C /* FFdraw.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFdraw.h; sourceTree = "<group>"; };
+		4B85C44305DAD65300459B7C /* FFTetra.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = FFTetra.c; sourceTree = "<group>"; };
+		4B85C44405DAD65300459B7C /* FFTetra.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFTetra.h; sourceTree = "<group>"; };
+		4B85C44505DAD65300459B7C /* FFVektor.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = FFVektor.c; sourceTree = "<group>"; };
+		4B85C44605DAD65300459B7C /* FFVektor.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFVektor.h; sourceTree = "<group>"; };
+		4B85C45805DAD68300459B7C /* FFSineButton.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFSineButton.h; sourceTree = "<group>"; };
+		4B85C45905DAD68300459B7C /* FFSineButton.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FFSineButton.m; sourceTree = "<group>"; };
+		4B85C45C05DAD68300459B7C /* FFSineView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFSineView.h; sourceTree = "<group>"; };
+		4B85C45D05DAD68300459B7C /* FFSineView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FFSineView.m; sourceTree = "<group>"; };
+		4B85C46A05DAD6A700459B7C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		4B85C47E05DAD6DA00459B7C /* FFController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFController.h; sourceTree = "<group>"; };
+		4B85C47F05DAD6DA00459B7C /* FFController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FFController.m; sourceTree = "<group>"; };
+		4B85C48405DAD6F800459B7C /* FFWindow.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFWindow.h; sourceTree = "<group>"; };
+		4B85C48505DAD6F800459B7C /* FFWindow.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FFWindow.m; sourceTree = "<group>"; };
+		4BF098DC05DAF592008E4BAC /* FFCocoaHedronView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFCocoaHedronView.h; sourceTree = "<group>"; };
+		4BF098DF05DAF5A4008E4BAC /* FFCocoaHedronView_SAVER.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = FFCocoaHedronView_SAVER.h; sourceTree = "<group>"; };
+		8D255AD20486D3F9007BF209 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D255AD30486D3F9007BF209 /* CocoaHedron.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaHedron.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B479BFE05DAD19000922F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BA239F405DD5CD7006A53FB /* ScreenSaver.framework in Frameworks */,
+				4B479C0305DAD1E600922F7A /* Cocoa.framework in Frameworks */,
+				4B85C46B05DAD6A700459B7C /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D255ACD0486D3F9007BF209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D255ACE0486D3F9007BF209 /* Cocoa.framework in Frameworks */,
+				8D255ACF0486D3F9007BF209 /* ScreenSaver.framework in Frameworks */,
+				4B85C46C05DAD6A700459B7C /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* CocoaHedron */ = {
+			isa = PBXGroup;
+			children = (
+				4B85C43E05DAD63400459B7C /* openGL */,
+				4B85C45705DAD66400459B7C /* Sine */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32DBCFA70370C4F300C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				4B479C0205DAD19000922F7A /* CocoaHedron-Info.plist */,
+			);
+			name = CocoaHedron;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B2692AB05E157BA001CFF8F /* CocoaHedron.icns */,
+				4B7BB48805DFE57C00611E84 /* fs.tif */,
+				4B5A74FF05DAEAF50096D5A3 /* ConfigureSheet.nib */,
+				4B85C42E05DAD44200459B7C /* ff.tif */,
+				4B85C42B05DAD43300459B7C /* MainMenu.nib */,
+				8D255AD20486D3F9007BF209 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4BF098DF05DAF5A4008E4BAC /* FFCocoaHedronView_SAVER.h */,
+				4B5A750605DAF43C0096D5A3 /* FFCocoaHedronView_APP.h */,
+				4BF098DC05DAF592008E4BAC /* FFCocoaHedronView.h */,
+				4B5A750305DAF42E0096D5A3 /* FFCocoaHedronView.m */,
+				4B85C48405DAD6F800459B7C /* FFWindow.h */,
+				4B85C48505DAD6F800459B7C /* FFWindow.m */,
+				4B85C47E05DAD6DA00459B7C /* FFController.h */,
+				4B85C47F05DAD6DA00459B7C /* FFController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B85C46A05DAD6A700459B7C /* OpenGL.framework */,
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				06F27B2DFFEEEFEF11CA0E56 /* ScreenSaver.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D255AD30486D3F9007BF209 /* CocoaHedron.saver */,
+				4B479C0005DAD19000922F7A /* CocoaHedron.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DBCFA70370C4F300C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B479C0D05DAD21100922F7A /* main.m */,
+				32DBCFA80370C50100C91783 /* CocoaHedron_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		4B85C43E05DAD63400459B7C /* openGL */ = {
+			isa = PBXGroup;
+			children = (
+				4B85C43F05DAD65300459B7C /* FFCam.c */,
+				4B85C44005DAD65300459B7C /* FFCam.h */,
+				4B85C44105DAD65300459B7C /* FFdraw.c */,
+				4B85C44205DAD65300459B7C /* FFdraw.h */,
+				4B85C44305DAD65300459B7C /* FFTetra.c */,
+				4B85C44405DAD65300459B7C /* FFTetra.h */,
+				4B85C44505DAD65300459B7C /* FFVektor.c */,
+				4B85C44605DAD65300459B7C /* FFVektor.h */,
+			);
+			name = openGL;
+			sourceTree = "<group>";
+		};
+		4B85C45705DAD66400459B7C /* Sine */ = {
+			isa = PBXGroup;
+			children = (
+				4B85C45805DAD68300459B7C /* FFSineButton.h */,
+				4B85C45905DAD68300459B7C /* FFSineButton.m */,
+				4B1D32D505DE71A10026C6C6 /* FFsine.h */,
+				4B1D32D605DE71A10026C6C6 /* FFsine.c */,
+				4B85C45C05DAD68300459B7C /* FFSineView.h */,
+				4B85C45D05DAD68300459B7C /* FFSineView.m */,
+				4B1D32E205DE76100026C6C6 /* FFSineController.h */,
+				4B1D32E305DE76100026C6C6 /* FFSineController.m */,
+			);
+			name = Sine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4B479BFB05DAD19000922F7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B479C0C05DAD1FF00922F7A /* CocoaHedron_Prefix.pch in Headers */,
+				4B5A74F705DAE3EF0096D5A3 /* FFVektor.h in Headers */,
+				4B5A74F505DAE3EF0096D5A3 /* FFdraw.h in Headers */,
+				4B5A74F405DAE3EF0096D5A3 /* FFCam.h in Headers */,
+				4B5A74F605DAE3EF0096D5A3 /* FFTetra.h in Headers */,
+				4B85C49305DAD86B00459B7C /* FFSineView.h in Headers */,
+				4B85C49105DAD86B00459B7C /* FFSineButton.h in Headers */,
+				4B5A74F805DAE5760096D5A3 /* FFWindow.h in Headers */,
+				4B5A74F905DAE5760096D5A3 /* FFController.h in Headers */,
+				4B5A750705DAF43C0096D5A3 /* FFCocoaHedronView_APP.h in Headers */,
+				4BF098DD05DAF592008E4BAC /* FFCocoaHedronView.h in Headers */,
+				4B1D32D905DE71A10026C6C6 /* FFsine.h in Headers */,
+				4B1D32E405DE76100026C6C6 /* FFSineController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D255AC60486D3F9007BF209 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D255AC70486D3F9007BF209 /* CocoaHedron_Prefix.pch in Headers */,
+				4B85C45205DAD65300459B7C /* FFdraw.h in Headers */,
+				4B85C45605DAD65300459B7C /* FFVektor.h in Headers */,
+				4B85C45005DAD65300459B7C /* FFCam.h in Headers */,
+				4B85C45405DAD65300459B7C /* FFTetra.h in Headers */,
+				4B1D32D705DE71A10026C6C6 /* FFsine.h in Headers */,
+				4B7E4B1A05DE926D00FAC147 /* FFSineController.h in Headers */,
+				4B85C46805DAD68300459B7C /* FFSineView.h in Headers */,
+				4B85C46405DAD68300459B7C /* FFSineButton.h in Headers */,
+				4B85C48205DAD6DA00459B7C /* FFController.h in Headers */,
+				4BF098DE05DAF592008E4BAC /* FFCocoaHedronView.h in Headers */,
+				4BF098E005DAF5A4008E4BAC /* FFCocoaHedronView_SAVER.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4B479BFF05DAD19000922F7A /* CocoaHedron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B830D1D0A89162300BF57D4 /* Build configuration list for PBXNativeTarget "CocoaHedron" */;
+			buildPhases = (
+				4B479BFB05DAD19000922F7A /* Headers */,
+				4B479BFC05DAD19000922F7A /* Resources */,
+				4B479BFD05DAD19000922F7A /* Sources */,
+				4B479BFE05DAD19000922F7A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaHedron;
+			productName = CocoaHedron;
+			productReference = 4B479C0005DAD19000922F7A /* CocoaHedron.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D255AC50486D3F9007BF209 /* CocoaHedronSaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B830D190A89162300BF57D4 /* Build configuration list for PBXNativeTarget "CocoaHedronSaver" */;
+			buildPhases = (
+				8D255AC60486D3F9007BF209 /* Headers */,
+				8D255AC90486D3F9007BF209 /* Resources */,
+				8D255ACB0486D3F9007BF209 /* Sources */,
+				8D255ACD0486D3F9007BF209 /* Frameworks */,
+				8D255AD00486D3F9007BF209 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaHedronSaver;
+			productInstallPath = "$(HOME)/Library/Screen Savers";
+			productName = CocoaHedron;
+			productReference = 8D255AD30486D3F9007BF209 /* CocoaHedron.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4B830D210A89162300BF57D4 /* Build configuration list for PBXProject "CocoaHedron" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* CocoaHedron */;
+			projectDirPath = "";
+			targets = (
+				8D255AC50486D3F9007BF209 /* CocoaHedronSaver */,
+				4B479BFF05DAD19000922F7A /* CocoaHedron */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B479BFC05DAD19000922F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B85C42C05DAD43300459B7C /* MainMenu.nib in Resources */,
+				4B85C42F05DAD44200459B7C /* ff.tif in Resources */,
+				4B7BB48A05DFE57D00611E84 /* fs.tif in Resources */,
+				4B2692AD05E157BA001CFF8F /* CocoaHedron.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D255AC90486D3F9007BF209 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D255ACA0486D3F9007BF209 /* InfoPlist.strings in Resources */,
+				4B85C43005DAD44200459B7C /* ff.tif in Resources */,
+				4B5A750005DAEAF50096D5A3 /* ConfigureSheet.nib in Resources */,
+				4B7BB48905DFE57D00611E84 /* fs.tif in Resources */,
+				4B2692AC05E157BA001CFF8F /* CocoaHedron.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D255AD00486D3F9007BF209 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B479BFD05DAD19000922F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B5A74F305DAE3BD0096D5A3 /* FFVektor.c in Sources */,
+				4B5A74F105DAE3BD0096D5A3 /* FFdraw.c in Sources */,
+				4B5A74EC05DADD5C0096D5A3 /* FFCam.c in Sources */,
+				4B5A74F205DAE3BD0096D5A3 /* FFTetra.c in Sources */,
+				4B479C0E05DAD21100922F7A /* main.m in Sources */,
+				4B85C49005DAD86400459B7C /* FFSineView.m in Sources */,
+				4B85C48E05DAD86400459B7C /* FFSineButton.m in Sources */,
+				4B5A74FA05DAE5820096D5A3 /* FFWindow.m in Sources */,
+				4B5A74FB05DAE5820096D5A3 /* FFController.m in Sources */,
+				4B5A750505DAF42E0096D5A3 /* FFCocoaHedronView.m in Sources */,
+				4B1D32DA05DE71A10026C6C6 /* FFsine.c in Sources */,
+				4B1D32E505DE76100026C6C6 /* FFSineController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D255ACB0486D3F9007BF209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B85C44F05DAD65300459B7C /* FFCam.c in Sources */,
+				4B85C45105DAD65300459B7C /* FFdraw.c in Sources */,
+				4B85C45305DAD65300459B7C /* FFTetra.c in Sources */,
+				4B85C45505DAD65300459B7C /* FFVektor.c in Sources */,
+				4B1D32D805DE71A10026C6C6 /* FFsine.c in Sources */,
+				4B7E4B1B05DE928D00FAC147 /* FFSineController.m in Sources */,
+				4B85C46505DAD68300459B7C /* FFSineButton.m in Sources */,
+				4B85C46905DAD68300459B7C /* FFSineView.m in Sources */,
+				4B85C48305DAD6DA00459B7C /* FFController.m in Sources */,
+				4B5A750405DAF42E0096D5A3 /* FFCocoaHedronView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B830D1A0A89162300BF57D4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaHedron_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LIBRARY_SEARCH_PATHS = "";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-DFF_SAVER";
+				OTHER_LDFLAGS = "-noprebind";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaHedron;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = saver;
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4B830D1B0A89162300BF57D4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(NATIVE_ARCH)",
+					ppc,
+				);
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaHedron_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DFF_SAVER";
+				OTHER_LDFLAGS = "-noprebind";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaHedron;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = saver;
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4B830D1C0A89162300BF57D4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_ENABLE_TRIGRAPHS = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaHedron_Prefix.pch;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_LABEL = NO;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "-DFF_SAVER";
+				OTHER_LDFLAGS = "-noprebind";
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = CocoaHedron;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = saver;
+				ZERO_LINK = NO;
+			};
+			name = Default;
+		};
+		4B830D1E0A89162300BF57D4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaHedron_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "CocoaHedron-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-DFF_APP";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CocoaHedron;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wall";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		4B830D1F0A89162300BF57D4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaHedron_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "CocoaHedron-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "-DFF_APP";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CocoaHedron;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wall";
+				ZERO_LINK = NO;
+			};
+			name = Deployment;
+		};
+		4B830D200A89162300BF57D4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CocoaHedron_Prefix.pch;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = NO;
+				INFOPLIST_FILE = "CocoaHedron-Info.plist";
+				INSTALL_PATH = "$(USER_APPS_DIR)";
+				OTHER_CFLAGS = "-DFF_APP";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = CocoaHedron;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Default;
+		};
+		4B830D220A89162300BF57D4 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Development;
+		};
+		4B830D230A89162300BF57D4 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deployment;
+		};
+		4B830D240A89162300BF57D4 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B830D190A89162300BF57D4 /* Build configuration list for PBXNativeTarget "CocoaHedronSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B830D1A0A89162300BF57D4 /* Development */,
+				4B830D1B0A89162300BF57D4 /* Deployment */,
+				4B830D1C0A89162300BF57D4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4B830D1D0A89162300BF57D4 /* Build configuration list for PBXNativeTarget "CocoaHedron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B830D1E0A89162300BF57D4 /* Development */,
+				4B830D1F0A89162300BF57D4 /* Deployment */,
+				4B830D200A89162300BF57D4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		4B830D210A89162300BF57D4 /* Build configuration list for PBXProject "CocoaHedron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B830D220A89162300BF57D4 /* Development */,
+				4B830D230A89162300BF57D4 /* Deployment */,
+				4B830D240A89162300BF57D4 /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

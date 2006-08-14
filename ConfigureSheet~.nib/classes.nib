@@ -1,0 +1,95 @@
+{
+    IBClasses = (
+        {
+            CLASS = FFCocoaHedronView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controller = FFController; prefSheet = id; }; 
+            SUPERCLASS = ScreenSaverView; 
+        }, 
+        {
+            ACTIONS = {
+                closeSheet = id; 
+                gotoFF = id; 
+                restoreDefaults = id; 
+                showDist = id; 
+                showPrefs = id; 
+                showSize = id; 
+                showTurn = id; 
+                toggleFullScreen = id; 
+                updateDepth = id; 
+                updateDist = id; 
+                updateGlobal = id; 
+                updateSettings = id; 
+                updateSize = id; 
+                updateTurn = id; 
+            }; 
+            CLASS = FFController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                aboutBox = NSWindow; 
+                axisSwitch = NSButton; 
+                borderSwitch = NSButton; 
+                delaySwitch = NSButton; 
+                distButton = FFSineButton; 
+                distContro = FFSineController; 
+                distWindow = NSWindow; 
+                helpBox = NSWindow; 
+                highDepthSlider = NSSlider; 
+                logoSwitch = NSButton; 
+                lowDepthSlider = NSSlider; 
+                mainView = FFCocoaHedronView; 
+                mainWindow = NSWindow; 
+                prefSheet = id; 
+                prefsWindow = NSWindow; 
+                shadeSwitch = NSButton; 
+                sizeButton = FFSineButton; 
+                sizeContro = FFSineController; 
+                sizeWindow = NSWindow; 
+                smoothSwitch = NSButton; 
+                turnButton = FFSineButton; 
+                turnContro = FFSineController; 
+                turnSlider = NSSlider; 
+                turnWindow = NSWindow; 
+                yankSlider = NSSlider; 
+                zoomSlider = NSSlider; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = FFSineButton; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {view = FFSineView; }; 
+            SUPERCLASS = NSButton; 
+        }, 
+        {
+            ACTIONS = {update = id; }; 
+            CLASS = FFSineController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                ampSlider = NSSlider; 
+                contro = FFController; 
+                deltaSlider = NSSlider; 
+                detailView = FFSineView; 
+                freqSlider = NSSlider; 
+                miniView = FFSineView; 
+                phaseSlider = NSSlider; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            CLASS = FFSineView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {contro = FFSineController; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            CLASS = FFWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controller = FFController; }; 
+            SUPERCLASS = NSWindow; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = ScreenSaverView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}
