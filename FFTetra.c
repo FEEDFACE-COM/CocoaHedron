@@ -53,24 +53,28 @@ drawSingleTetra(void)
 {
 	glBegin(GL_TRIANGLES); {    
 		//ABC
-		glVertex3f(a.x,a.y,a.z); glNormal3f(d.x,d.y,d.z);
-		glVertex3f(b.x,b.y,b.z); glNormal3f(d.x,d.y,d.z);
-		glVertex3f(c.x,c.y,c.z); glNormal3f(d.x,d.y,d.z);
+		glNormal3f(d.x,d.y,d.z);
+		glVertex3f(a.x,a.y,a.z); //glNormal3f(d.x,d.y,d.z);
+		glVertex3f(b.x,b.y,b.z); //glNormal3f(d.x,d.y,d.z);
+		glVertex3f(c.x,c.y,c.z); //glNormal3f(d.x,d.y,d.z);
 		
 		//ADB
-		glVertex3f(a.x,a.y,a.z); glNormal3f(c.x,c.y,c.z);
-		glVertex3f(d.x,d.y,d.z); glNormal3f(c.x,c.y,c.z);
-		glVertex3f(b.x,b.y,b.z); glNormal3f(c.x,c.y,c.z);
+		glNormal3f(c.x,c.y,c.z);
+		glVertex3f(a.x,a.y,a.z); //glNormal3f(c.x,c.y,c.z);
+		glVertex3f(d.x,d.y,d.z); //glNormal3f(c.x,c.y,c.z);
+		glVertex3f(b.x,b.y,b.z); //glNormal3f(c.x,c.y,c.z);
 		
 		//ACD
-		glVertex3f(a.x,a.y,a.z); glNormal3f(b.x,b.y,b.z);
-		glVertex3f(c.x,c.y,c.z); glNormal3f(b.x,b.y,b.z);
-		glVertex3f(d.x,d.y,d.z); glNormal3f(b.x,b.y,b.z);
+		glNormal3f(b.x,b.y,b.z);
+		glVertex3f(a.x,a.y,a.z); //glNormal3f(b.x,b.y,b.z);
+		glVertex3f(c.x,c.y,c.z); //glNormal3f(b.x,b.y,b.z);
+		glVertex3f(d.x,d.y,d.z); //glNormal3f(b.x,b.y,b.z);
 		
 		//BDC
-		glVertex3f(b.x,b.y,b.z); glNormal3f(a.x,a.y,a.z);
-		glVertex3f(d.x,d.y,d.z); glNormal3f(a.x,a.y,a.z);
-		glVertex3f(c.x,c.y,c.z); glNormal3f(a.x,a.y,a.z);
+		glNormal3f(a.x,a.y,a.z);
+		glVertex3f(b.x,b.y,b.z); //glNormal3f(a.x,a.y,a.z);
+		glVertex3f(d.x,d.y,d.z); //glNormal3f(a.x,a.y,a.z);
+		glVertex3f(c.x,c.y,c.z); //glNormal3f(a.x,a.y,a.z);
 	}glEnd();
 }
 
