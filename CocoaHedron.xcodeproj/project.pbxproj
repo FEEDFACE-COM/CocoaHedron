@@ -348,9 +348,11 @@
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 4B830D210A89162300BF57D4 /* Build configuration list for PBXProject "CocoaHedron" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 089C166AFE841209C02AAC07 /* CocoaHedron */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				8D255AC50486D3F9007BF209 /* CocoaHedronSaver */,
 				4B479BFF05DAD19000922F7A /* CocoaHedron */,

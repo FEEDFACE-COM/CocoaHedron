@@ -1,6 +1,7 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
+		activeArchitecture = i386;
 		activeBuildConfigurationName = Deployment;
 		activeExecutable = 4B479C0105DAD19000922F7A /* CocoaHedron */;
 		activeTarget = 4B479BFF05DAD19000922F7A /* CocoaHedron */;
@@ -154,7 +155,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 177226163;
+			PBXPerProjectTemplateStateSaveDate = 232375669;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -612,7 +613,7 @@
 				Frame = "{{0, 0}, {885, 195}}";
 				RubberWindowFrame = "391 65 885 237 0 0 1280 832 ";
 			};
-			PBXWorkspaceStateSaveDate = 177226163;
+			PBXWorkspaceStateSaveDate = 232375669;
 		};
 		sourceControlManager = 4B479BF905DAD15900922F7A /* Source Control */;
 		userBookmarkGroup = 4B7E4B1705DE8F1C00FAC147 /* PBXBookmarkGroup */;
@@ -621,10 +622,11 @@
 	};
 	089C167EFE841241C02AAC07 /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 449}}";
-			sepNavSelRange = "{197, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 451}}";
+			sepNavSelRange = "{109, 0}";
+			sepNavVisRange = "{0, 281}";
 			sepNavVisRect = "{{0, 0}, {705, 449}}";
-			sepNavWindowFrame = "{{61, 283}, {750, 502}}";
+			sepNavWindowFrame = "{{61, 276}, {750, 502}}";
 		};
 	};
 	32DBCFA80370C50100C91783 /* CocoaHedron_Prefix.pch */ = {
@@ -669,16 +671,17 @@
 	};
 	4B2692AB05E157BA001CFF8F /* CocoaHedron.icns */ = {
 		uiCtxt = {
-			sepNavWindowFrame = "{{15, 325}, {750, 502}}";
+			sepNavWindowFrame = "{{15, 276}, {750, 502}}";
 		};
 	};
 	4B479BF905DAD15900922F7A /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
-		isSCMEnabled = 0;
+		isSCMEnabled = 1;
 		scmConfiguration = {
+			SubversionToolPath = /usr/local/bin/svn;
 		};
-		scmType = scm.cvs;
+		scmType = scm.subversion;
 	};
 	4B479BFA05DAD15900922F7A /* Code sense */ = {
 		isa = PBXCodeSenseManager;
@@ -692,12 +695,12 @@
 	};
 	4B479C0105DAD19000922F7A /* CocoaHedron */ = {
 		isa = PBXExecutable;
-		activeArgIndex = 2147483647;
 		activeArgIndices = (
 		);
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -750,7 +753,7 @@
 	};
 	4B7BB48805DFE57C00611E84 /* fs.tif */ = {
 		uiCtxt = {
-			sepNavWindowFrame = "{{38, 304}, {750, 502}}";
+			sepNavWindowFrame = "{{38, 276}, {750, 502}}";
 		};
 	};
 	4B7E4B1705DE8F1C00FAC147 /* PBXBookmarkGroup */ = {
@@ -772,7 +775,7 @@
 	};
 	4B85C42E05DAD44200459B7C /* ff.tif */ = {
 		uiCtxt = {
-			sepNavWindowFrame = "{{61, 283}, {750, 502}}";
+			sepNavWindowFrame = "{{61, 276}, {750, 502}}";
 		};
 	};
 	4B85C43F05DAD65300459B7C /* FFCam.c */ = {
@@ -809,17 +812,17 @@
 	};
 	4B85C44305DAD65300459B7C /* FFTetra.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 2114}}";
-			sepNavSelRange = "{964, 0}";
-			sepNavVisRect = "{{0, 0}, {705, 418}}";
-			sepNavWindowFrame = "{{49, 274}, {750, 502}}";
+			sepNavIntBoundsRect = "{{0, 0}, {705, 2170}}";
+			sepNavSelRange = "{1936, 0}";
+			sepNavVisRect = "{{0, 868}, {705, 450}}";
+			sepNavWindowFrame = "{{130, 220}, {750, 502}}";
 		};
 	};
 	4B85C44405DAD65300459B7C /* FFTetra.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 418}}";
+			sepNavIntBoundsRect = "{{0, 0}, {705, 450}}";
 			sepNavSelRange = "{260, 9}";
-			sepNavVisRect = "{{0, 0}, {705, 418}}";
+			sepNavVisRect = "{{0, 0}, {705, 450}}";
 			sepNavWindowFrame = "{{130, 220}, {750, 502}}";
 		};
 	};
@@ -901,10 +904,12 @@
 		);
 		breakpointStyle = 0;
 		continueAfterActions = 0;
+		countType = 0;
 		delayBeforeContinue = 0;
 		fileReference = 4B5A750305DAF42E0096D5A3 /* FFCocoaHedronView.m */;
 		functionName = "-resizeGL";
 		hitCount = 0;
+		ignoreCount = 0;
 		lineNumber = 591;
 		modificationTime = 0;
 		state = 1;
@@ -915,10 +920,12 @@
 		);
 		breakpointStyle = 0;
 		continueAfterActions = 0;
+		countType = 0;
 		delayBeforeContinue = 0;
 		fileReference = 4B85C48505DAD6F800459B7C /* FFWindow.m */;
 		functionName = "-awakeFromNib";
 		hitCount = 0;
+		ignoreCount = 0;
 		lineNumber = 40;
 		modificationTime = 0;
 		state = 2;
@@ -927,10 +934,12 @@
 		isa = PBXFileBreakpoint;
 		breakpointStyle = 0;
 		continueAfterActions = 0;
+		countType = 0;
 		delayBeforeContinue = 0;
 		fileReference = 4B85C45D05DAD68300459B7C /* FFSineView.m */;
 		functionName = "-drawRect:";
 		hitCount = 0;
+		ignoreCount = 0;
 		lineNumber = 2;
 		modificationTime = 0;
 		state = 2;
@@ -939,10 +948,12 @@
 		isa = PBXFileBreakpoint;
 		breakpointStyle = 0;
 		continueAfterActions = 0;
+		countType = 0;
 		delayBeforeContinue = 0;
 		fileReference = 4B85C47F05DAD6DA00459B7C /* FFController.m */;
 		functionName = "-getFunc:";
 		hitCount = 0;
+		ignoreCount = 0;
 		lineNumber = 445;
 		modificationTime = 0;
 		state = 2;
@@ -951,10 +962,12 @@
 		isa = PBXFileBreakpoint;
 		breakpointStyle = 0;
 		continueAfterActions = 0;
+		countType = 0;
 		delayBeforeContinue = 0;
 		fileReference = 4B1D32E305DE76100026C6C6 /* FFSineController.m */;
 		functionName = "-getFunc:";
 		hitCount = 0;
+		ignoreCount = 0;
 		lineNumber = 1;
 		modificationTime = 0;
 		state = 2;
