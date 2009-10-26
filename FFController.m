@@ -238,8 +238,8 @@ generateMiniWindow
 	NSImage *img;
 	NSBitmapImageRep *rep;
 	unsigned char *buf;
+    float *zbuf;
 	unsigned long w,h,vw,vh;
-	unsigned long i;
 	
 	vw= (unsigned long) [mainView frame].size.width;
 	vh= (unsigned long) [mainView frame].size.height;
@@ -263,16 +263,55 @@ generateMiniWindow
 	glReadBuffer(GL_FRONT);
 	glReadPixels(vw>vh?vw/2-vh/2:0,vh>vw?vh/2-vw/2:0,w,h,GL_RGBA,GL_UNSIGNED_BYTE,buf);
 
+    zbuf= malloc( w * h * sizeof(float)  );
+    if (!zbuf)
+        return;
+	glReadBuffer(GL_DEPTH);
+	glReadPixels(vw>vh?vw/2-vh/2:0,vh>vw?vh/2-vw/2:0,w,h,GL_DEPTH_COMPONENT,GL_FLOAT,zbuf);
+
+
 	//make bg color transparent
-#warning change to depth buffer compare
-	for (i=0; i<w*h*4; i+=4) 
-		if (buf[i]==0xcc && buf[i+1]==0xcc && buf[i+2]==0xcc) 
-			buf[i+3] = 0x00;
+    int n= 0;
+    for (int y= 0; y<h; y++) {
+        for (int x= 0; x<w; x++) {
+#if 1 //fast, but depends on internal pixel format
+            const int RED= 0;
+            const int GREEN= 1;
+            const int BLUE= 2;
+            const int ALPHA= 3; //offset due to RGBA
+            unsigned char *pixel;
+            pixel= (unsigned char*) &buf[x * 4 + y * w * 4];
+            if (zbuf[n] == 1.0) {
+                pixel[ALPHA]= 0x00;
+                pixel[RED]= 0x00;
+                pixel[GREEN]= 0x00;
+                pixel[BLUE]= 0x00;
+            }
+            n++;
+        }
+    }
+//cleaner, but slow:
+#else
+            CGFloat red, green, blue, alpha;
+            NSColor *color=  [rep colorAtX: x y: y];
+            [color getRed:&red green:&green blue:&blue alpha:&alpha];
+            if (zbuf[n] == 1.0)
+                alpha= 0.0;
+            [rep setColor: [NSColor colorWithCalibratedRed: red green: green blue: blue alpha: alpha] atX: x y: y];
+            n++;
+        }
+    }
+#endif            
+//	for (i=0; i<w*h*4; i+=4) 
+//        if (zbuf[i/4] == 1.0)
+//		if (buf[i]==0xcc && buf[i+1]==0xcc && buf[i+2]==0xcc) 
+//			buf[i+3] = 0x00; //set alpha to zero
 		
 	img= [[[NSImage alloc] initWithSize: NSMakeSize(0.8*w,0.8*h)] autorelease];
 	[img addRepresentation: rep];
 	[img setFlipped: TRUE];
 	[mainWindow setMiniwindowImage: img];
+    free(zbuf);
 }
 
 
