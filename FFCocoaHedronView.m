@@ -49,9 +49,15 @@ extern FFVektor a,b,c,d;
 
 
 - (void)
+dealloc
+{
+    [controller cleanUp];
+    free(logo);
+}
+
+- (void)
 release
 {
-	[controller cleanUp];
 	[super release];
 }
 
@@ -81,7 +87,8 @@ release
 		[self addSubview: view];
 												
 		if (isPreview) {
-			screenSize= [[[self window] screen] frame].size;
+//			screenSize= [[[self window] screen] frame].size;
+			screenSize= frame.size;
 			inFullScreen= FALSE;
 		}	
 		else {
@@ -302,11 +309,17 @@ mouseDragged: (NSEvent*) eve
 initLogo
 {
 	NSImage *img;
+    NSBitmapImageRep *rep;
 	NSString *path;
 	
 	path= [NSString stringWithFormat: @"%@/fs.tif", [[NSBundle bundleForClass: [self class]] resourcePath]];
 	img= [[NSImage alloc] initWithContentsOfFile: path];
-	logo= [[[img representations] objectAtIndex: 0] bitmapData];
+    rep= [[img representations] objectAtIndex: 0];
+    unsigned int bytes= [rep bitsPerPixel] /8 * [rep pixelsWide] * [rep pixelsHigh];
+    logo= (unsigned char*) malloc(bytes);
+    memcpy(logo, [rep bitmapData],bytes);
+    [rep release];
+    [img release];
 }
 
 
@@ -512,7 +525,9 @@ drawScene
 		
 #warning dirty flag is useless just now...	
 			if (dirty || TRUE) {
+//                glNewList(tetra,GL_COMPILE);
 				drawTetra(tetra,0,low,high,DISTFUNC,TURNFUNC,SIZEFUNC);
+//                glEndList();
 				dirty= FALSE;
 			}	
 
@@ -576,9 +591,11 @@ drawScene
 			glPushMatrix();
 				setBlackColor();	
 				glCallList(tetra);
+//				drawTetra(tetra,0,low,high,DISTFUNC,TURNFUNC,SIZEFUNC);
 				glRotatef(180.0,0.0,0.0,1.0);
 				glRotatef(180.0,1.0,0.0,0.0);
 				setWhiteColor();
+//				drawTetra(tetra,0,low,high,DISTFUNC,TURNFUNC,SIZEFUNC);
 				glCallList(tetra);
 			glPopMatrix();		
 	

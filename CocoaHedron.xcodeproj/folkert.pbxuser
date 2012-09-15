@@ -1,9 +1,10 @@
 // !$*UTF8*$!
 {
 	089C1669FE841209C02AAC07 /* Project object */ = {
-		activeArchitecture = i386;
+		activeArchitecturePreference = x86_64;
 		activeBuildConfigurationName = Deployment;
 		activeExecutable = 4B479C0105DAD19000922F7A /* CocoaHedron */;
+		activeSDKPreference = macosx10.6;
 		activeTarget = 4B479BFF05DAD19000922F7A /* CocoaHedron */;
 		addToTargets = (
 			8D255AC50486D3F9007BF209 /* CocoaHedronSaver */,
@@ -11,10 +12,11 @@
 		);
 		breakpoints = (
 			4BD9C14905DE862A003F1294 /* FFSineView.m:2 */,
-			4BD9C14B05DE8790003F1294 /* FFController.m:445 */,
+			4BD9C14B05DE8790003F1294 /* FFController.m:484 */,
 			4BD9C14D05DE8796003F1294 /* FFSineController.m:1 */,
 			4BA30D9105E29F0D002F11C3 /* FFWindow.m:40 */,
-			4B998BCD06F749BE00907B88 /* FFCocoaHedronView.m:591 */,
+			4B97DE161095DF72003CEA9F /* FFController.m:307 */,
+			4B97DE541095E1A6003CEA9F /* FFController.m:309 */,
 		);
 		codeSenseManager = 4B479BFA05DAD15900922F7A /* Code sense */;
 		executables = (
@@ -64,7 +66,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					154,
+					155,
 					20,
 					33,
 					43,
@@ -155,7 +157,7 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 232375669;
+			PBXPerProjectTemplateStateSaveDate = 310296342;
 			PBXPrepackagedSmartGroups_v2 = (
 				{
 					PBXTransientLocationAtTop = bottom;
@@ -613,7 +615,7 @@
 				Frame = "{{0, 0}, {885, 195}}";
 				RubberWindowFrame = "391 65 885 237 0 0 1280 832 ";
 			};
-			PBXWorkspaceStateSaveDate = 232375669;
+			PBXWorkspaceStateSaveDate = 310296342;
 		};
 		sourceControlManager = 4B479BF905DAD15900922F7A /* Source Control */;
 		userBookmarkGroup = 4B7E4B1705DE8F1C00FAC147 /* PBXBookmarkGroup */;
@@ -680,6 +682,9 @@
 		isSCMEnabled = 1;
 		scmConfiguration = {
 			SubversionToolPath = /usr/local/bin/svn;
+			repositoryNamesForRoots = {
+				"" = "";
+			};
 		};
 		scmType = scm.subversion;
 	};
@@ -704,6 +709,9 @@
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
 		dylibVariantSuffix = "";
@@ -716,8 +724,11 @@
 		name = CocoaHedron;
 		savedGlobals = {
 		};
+		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	4B479C0205DAD19000922F7A /* CocoaHedron-Info.plist */ = {
 		uiCtxt = {
@@ -737,16 +748,18 @@
 	};
 	4B5A750305DAF42E0096D5A3 /* FFCocoaHedronView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {761, 9100}}";
-			sepNavSelRange = "{10593, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {777, 9310}}";
+			sepNavSelRange = "{3327, 79}";
+			sepNavVisRange = "{2548, 1479}";
 			sepNavVisRect = "{{0, 6024}, {761, 541}}";
-			sepNavWindowFrame = "{{393, 162}, {806, 593}}";
+			sepNavWindowFrame = "{{0, 4}, {836, 1024}}";
 		};
 	};
 	4B5A750605DAF43C0096D5A3 /* FFCocoaHedronView_APP.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 1134}}";
-			sepNavSelRange = "{835, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 1134}}";
+			sepNavSelRange = "{1050, 0}";
+			sepNavVisRange = "{519, 496}";
 			sepNavVisRect = "{{0, 0}, {705, 450}}";
 			sepNavWindowFrame = "{{38, 276}, {750, 502}}";
 		};
@@ -768,7 +781,7 @@
 		fRef = 4B5A750305DAF42E0096D5A3 /* FFCocoaHedronView.m */;
 		name = "FFCocoaHedronView.m: 349";
 		rLen = 0;
-		rLoc = 9841;
+		rLoc = 10134;
 		rType = 0;
 		vrLen = 902;
 		vrLoc = 7061;
@@ -796,32 +809,36 @@
 	};
 	4B85C44105DAD65300459B7C /* FFdraw.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 1092}}";
-			sepNavSelRange = "{175, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {815, 1148}}";
+			sepNavSelRange = "{862, 0}";
+			sepNavVisRange = "{598, 955}";
 			sepNavVisRect = "{{0, 0}, {705, 450}}";
-			sepNavWindowFrame = "{{107, 241}, {750, 502}}";
+			sepNavWindowFrame = "{{3, 96}, {874, 782}}";
 		};
 	};
 	4B85C44205DAD65300459B7C /* FFdraw.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 428}}";
-			sepNavSelRange = "{283, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 451}}";
+			sepNavSelRange = "{235, 6}";
+			sepNavVisRange = "{0, 390}";
 			sepNavVisRect = "{{0, 0}, {705, 428}}";
-			sepNavWindowFrame = "{{516, -20}, {750, 502}}";
+			sepNavWindowFrame = "{{516, 4}, {750, 502}}";
 		};
 	};
 	4B85C44305DAD65300459B7C /* FFTetra.c */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 2170}}";
-			sepNavSelRange = "{1936, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {689, 2226}}";
+			sepNavSelRange = "{3162, 0}";
+			sepNavVisRange = "{177, 1184}";
 			sepNavVisRect = "{{0, 868}, {705, 450}}";
-			sepNavWindowFrame = "{{130, 220}, {750, 502}}";
+			sepNavWindowFrame = "{{4, 140}, {748, 738}}";
 		};
 	};
 	4B85C44405DAD65300459B7C /* FFTetra.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 450}}";
-			sepNavSelRange = "{260, 9}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 451}}";
+			sepNavSelRange = "{202, 0}";
+			sepNavVisRange = "{0, 432}";
 			sepNavVisRect = "{{0, 0}, {705, 450}}";
 			sepNavWindowFrame = "{{130, 220}, {750, 502}}";
 		};
@@ -868,18 +885,20 @@
 	};
 	4B85C47E05DAD6DA00459B7C /* FFController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 909}}";
-			sepNavSelRange = "{573, 0}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 910}}";
+			sepNavSelRange = "{1702, 6}";
+			sepNavVisRange = "{803, 970}";
 			sepNavVisRect = "{{0, 481}, {705, 428}}";
 			sepNavWindowFrame = "{{393, 286}, {750, 502}}";
 		};
 	};
 	4B85C47F05DAD6DA00459B7C /* FFController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 6467}}";
-			sepNavSelRange = "{8324, 72}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 7322}}";
+			sepNavSelRange = "{11729, 6}";
+			sepNavVisRange = "{11514, 722}";
 			sepNavVisRect = "{{0, 3929}, {705, 428}}";
-			sepNavWindowFrame = "{{153, 199}, {750, 502}}";
+			sepNavWindowFrame = "{{393, 286}, {750, 502}}";
 		};
 	};
 	4B85C48405DAD6F800459B7C /* FFWindow.h */ = {
@@ -892,13 +911,14 @@
 	};
 	4B85C48505DAD6F800459B7C /* FFWindow.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 798}}";
-			sepNavSelRange = "{881, 13}";
+			sepNavIntBoundsRect = "{{0, 0}, {791, 798}}";
+			sepNavSelRange = "{997, 0}";
+			sepNavVisRange = "{0, 1063}";
 			sepNavVisRect = "{{0, 348}, {705, 450}}";
 			sepNavWindowFrame = "{{199, 157}, {750, 502}}";
 		};
 	};
-	4B998BCD06F749BE00907B88 /* FFCocoaHedronView.m:591 */ = {
+	4B97DE161095DF72003CEA9F /* FFController.m:307 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -906,12 +926,32 @@
 		continueAfterActions = 0;
 		countType = 0;
 		delayBeforeContinue = 0;
-		fileReference = 4B5A750305DAF42E0096D5A3 /* FFCocoaHedronView.m */;
-		functionName = "-resizeGL";
+		fileReference = 4B85C47F05DAD6DA00459B7C /* FFController.m */;
+		functionName = "-generateMiniWindow";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 591;
-		modificationTime = 0;
+		lineNumber = 307;
+		location = CocoaHedron;
+		modificationTime = 310224969.073105;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	4B97DE541095E1A6003CEA9F /* FFController.m:309 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 4B85C47F05DAD6DA00459B7C /* FFController.m */;
+		functionName = "-generateMiniWindow";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 309;
+		location = CocoaHedron;
+		modificationTime = 310224969.073343;
+		originalNumberOfMultipleMatches = 1;
 		state = 1;
 	};
 	4BA30D9105E29F0D002F11C3 /* FFWindow.m:40 */ = {
@@ -927,11 +967,14 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 40;
-		modificationTime = 0;
+		modificationTime = 310224925.606338;
+		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
 	4BD9C14905DE862A003F1294 /* FFSineView.m:2 */ = {
 		isa = PBXFileBreakpoint;
+		actions = (
+		);
 		breakpointStyle = 0;
 		continueAfterActions = 0;
 		countType = 0;
@@ -941,11 +984,14 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 2;
-		modificationTime = 0;
+		modificationTime = 310224925.605107;
+		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
-	4BD9C14B05DE8790003F1294 /* FFController.m:445 */ = {
+	4BD9C14B05DE8790003F1294 /* FFController.m:484 */ = {
 		isa = PBXFileBreakpoint;
+		actions = (
+		);
 		breakpointStyle = 0;
 		continueAfterActions = 0;
 		countType = 0;
@@ -954,12 +1000,15 @@
 		functionName = "-getFunc:";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 445;
-		modificationTime = 0;
+		lineNumber = 484;
+		modificationTime = 310224925.60576;
+		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
 	4BD9C14D05DE8796003F1294 /* FFSineController.m:1 */ = {
 		isa = PBXFileBreakpoint;
+		actions = (
+		);
 		breakpointStyle = 0;
 		continueAfterActions = 0;
 		countType = 0;
@@ -969,23 +1018,26 @@
 		hitCount = 0;
 		ignoreCount = 0;
 		lineNumber = 1;
-		modificationTime = 0;
+		modificationTime = 310224925.60605;
+		originalNumberOfMultipleMatches = 0;
 		state = 2;
 	};
 	4BF098DC05DAF592008E4BAC /* FFCocoaHedronView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 450}}";
+			sepNavIntBoundsRect = "{{0, 0}, {777, 973}}";
 			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 98}";
 			sepNavVisRect = "{{0, 0}, {705, 450}}";
 			sepNavWindowFrame = "{{15, 276}, {750, 502}}";
 		};
 	};
 	4BF098DF05DAF5A4008E4BAC /* FFCocoaHedronView_SAVER.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {705, 1134}}";
-			sepNavSelRange = "{525, 12}";
+			sepNavIntBoundsRect = "{{0, 0}, {691, 1232}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{495, 525}";
 			sepNavVisRect = "{{0, 318}, {705, 450}}";
-			sepNavWindowFrame = "{{208, 19}, {750, 502}}";
+			sepNavWindowFrame = "{{243, 188}, {750, 502}}";
 		};
 	};
 	8D255AC50486D3F9007BF209 /* CocoaHedronSaver */ = {

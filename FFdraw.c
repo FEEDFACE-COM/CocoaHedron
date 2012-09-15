@@ -43,7 +43,7 @@ void drawLogo(unsigned char *logo, GLfloat w, GLfloat h)
 {
 	glEnable(GL_BLEND);
 	glPushMatrix();
-		glRasterPos2f(w/2.0f-96,-h/2.0f+32);
+		glRasterPos2f(w/2.0f-96.0f,-h/2.0f+32.0f);
 		glDrawPixels(64,64,GL_RGBA,GL_UNSIGNED_BYTE,logo);
 	glPopMatrix();	
 	glDisable(GL_BLEND);
@@ -52,8 +52,8 @@ void drawLogo(unsigned char *logo, GLfloat w, GLfloat h)
 
 
 
-unsigned long in[1280*854];
-unsigned long out[1280*854];
+unsigned char in[4*1440*900];
+unsigned char out[4*1440*900];
 
 
 void
@@ -66,11 +66,15 @@ goSmooth(unsigned long w, unsigned long h)
 	glReadPixels(0,0,w,h,GL_RGBA,GL_UNSIGNED_INT_8_8_8_8,in);
 
 
-	for (i=0; i<w*h; i++) {
+	for (i=0; i<w*h*4; i+=4) {
+        out[i+0]= 0;//in[i+0];
+        out[i+1]= 0;//in[i+1];
+        out[i+2]= 0;//in[i+2];
+        out[i+3]= 0;//in[i+3];
 	}
 
 	glDrawBuffer(GL_FRONT);
-	glRasterPos2f(-0.5*w,-0.5*h);	
+	glRasterPos2i(w/2,h/2);	
 //	glColorMask(GL_TRUE,GL_TRUE,GL_TRUE,GL_FALSE);
 	glDrawPixels(w,h,GL_RGBA,GL_UNSIGNED_INT_8_8_8_8,out);
 }

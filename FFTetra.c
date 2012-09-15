@@ -98,24 +98,28 @@ drawTetra(GLuint tetra, GLuint depth, GLuint low, GLuint high, GLfloat dF, GLflo
 			glTranslatef(dF*a.x,dF*a.y,dF*a.z);
 			glScalef(sF,sF,sF);
 			glCallList(tetra+depth+1);
+//            drawTetra(tetra,depth+1,low,high,dF,tF,sF);
 		glPopMatrix();
 		glPushMatrix();
 			glRotatef(tF,d.x,d.y,d.z);
 			glTranslatef(dF*d.x,dF*d.y,dF*d.z);
 			glScalef(sF,sF,sF);
 			glCallList(tetra+depth+1);
+//            drawTetra(tetra,depth+1,low,high,dF,tF,sF);
 		glPopMatrix();
 		glPushMatrix();
 			glRotatef(tF,b.x,b.y,b.z);		
 			glTranslatef(dF*b.x,dF*b.y,dF*b.z);
 			glScalef(sF,sF,sF);
 			glCallList(tetra+depth+1);
+//            drawTetra(tetra,depth+1,low,high,dF,tF,sF);
 		glPopMatrix();
 		glPushMatrix();
 			glRotatef(tF,c.x,c.y,c.z);
 			glTranslatef(dF*c.x,dF*c.y,dF*c.z);
 			glScalef(sF,sF,sF);
 			glCallList(tetra+depth+1);
+//            drawTetra(tetra,depth+1,low,high,dF,tF,sF);
 		glPopMatrix();
 		
 	} glEndList();
