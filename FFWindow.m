@@ -35,7 +35,7 @@ newScreen: (NSNotification*) note
 	[self setContentMaxSize: NSMakeSize(ss.width,ss.height)];
 	[self setContentMinSize: NSMakeSize(ss.width/8.0,ss.height/8.0)];
 	[self setContentSize: NSMakeSize(ss.width/2.0,ss.height/2.0)];
-	NSLog(@"in new screen");
+//	NSLog(@"in new screen");
 }
 
 

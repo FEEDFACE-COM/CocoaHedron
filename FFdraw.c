@@ -59,8 +59,9 @@ unsigned char out[4*1440*900];
 void
 goSmooth(unsigned long w, unsigned long h)
 {
-	long i,x,y;
-	unsigned long tmp;
+	long i;
+//    long x,y;
+//	unsigned long tmp;
 
 	glReadBuffer(GL_BACK);
 	glReadPixels(0,0,w,h,GL_RGBA,GL_UNSIGNED_INT_8_8_8_8,in);

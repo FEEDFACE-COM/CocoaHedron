@@ -53,13 +53,9 @@ dealloc
 {
     [controller cleanUp];
     free(logo);
+    [super dealloc];
 }
 
-- (void)
-release
-{
-	[super release];
-}
 
 
 
@@ -67,7 +63,7 @@ release
 {
 	self = [super initWithFrame:frame isPreview:isPreview];
 	if (self) {
-		long val= 1;
+		GLint val= 1;
 		NSOpenGLPixelFormatAttribute attribs[]= {
 			NSOpenGLPFAAccelerated,
 			(NSOpenGLPixelFormatAttribute) YES,
@@ -161,7 +157,7 @@ basicPixelFormat
 - (void)
 awakeFromNib
 {
-	long val= 1;
+  	GLint val= 1;
 	fade= 0.0;
 	[[self openGLContext] setValues: &val forParameter: NSOpenGLCPSwapInterval];	
 	inFullScreen= FALSE;
@@ -255,6 +251,7 @@ initialize
 - (void)
 drawRect: (NSRect) rect
 {
+
 	w= rect.size.width;
 	h= rect.size.height;
 
@@ -311,14 +308,13 @@ initLogo
 	NSImage *img;
     NSBitmapImageRep *rep;
 	NSString *path;
-	
 	path= [NSString stringWithFormat: @"%@/fs.tif", [[NSBundle bundleForClass: [self class]] resourcePath]];
 	img= [[NSImage alloc] initWithContentsOfFile: path];
     rep= [[img representations] objectAtIndex: 0];
     unsigned int bytes= [rep bitsPerPixel] /8 * [rep pixelsWide] * [rep pixelsHigh];
     logo= (unsigned char*) malloc(bytes);
     memcpy(logo, [rep bitmapData],bytes);
-    [rep release];
+//    [rep release]; //this will crash the whole app at startup on 10.8 :D
     [img release];
 }
 
@@ -520,11 +516,10 @@ drawScene
 		if (showAxis) drawAxis(1.0,2.0);
 
 
-
 		glPushMatrix();
 		
 #warning dirty flag is useless just now...	
-			if (dirty || TRUE) {
+			if (dirty) {
 //                glNewList(tetra,GL_COMPILE);
 				drawTetra(tetra,0,low,high,DISTFUNC,TURNFUNC,SIZEFUNC);
 //                glEndList();
