@@ -519,7 +519,7 @@ drawScene
 		glPushMatrix();
 		
 #warning dirty flag is useless just now...	
-			if (dirty) {
+			if (dirty || true) {
 //                glNewList(tetra,GL_COMPILE);
 				drawTetra(tetra,0,low,high,DISTFUNC,TURNFUNC,SIZEFUNC);
 //                glEndList();
